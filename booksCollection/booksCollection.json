@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "686e9d4c5dd6f6d707431745"
+  },
+  "title": "The Bitcoin Standard",
+  "author": "Ammous Saifedean",
+  "pages": 412,
+  "release_date": "2020-11-14",
+  "rating": 4.7,
+  "price": 43.99
+},
+{
+  "_id": {
+    "$oid": "686e9d4c5dd6f6d707431746"
+  },
+  "title": "Atomic Habits",
+  "author": "Clear James",
+  "pages": 320,
+  "release_date": "2018-10-01",
+  "rating": 4.8,
+  "price": 49.99
+},
+{
+  "_id": {
+    "$oid": "686e9d4c5dd6f6d707431747"
+  },
+  "title": "The Lean Startup",
+  "author": "Ries Eric",
+  "pages": 248,
+  "release_date": "2017-09-07",
+  "rating": 4.6,
+  "price": 35.99
+}]
