@@ -1,0 +1,7 @@
+#booksDiv{
+    float: left;
+    background-color: black;
+    color: white;
+    border: solid 5px red;
+    padding: 10px;
+}
