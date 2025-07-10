@@ -12,6 +12,9 @@ const port = process.env.PORT || 3000;
 
 await connectToDb();
 
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
 app.use("/api/books", booksRouter);
 
 app.use(endpointError);

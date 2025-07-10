@@ -1,12 +1,39 @@
 import mongoose from "mongoose";
 
 const booksSchema = new mongoose.Schema({
-    title: String,
-    author: String,
-    pages: Number,
-    relase_date: Date,
-    rating: Number,
-    price: Number
+    title: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    author: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    pages: {
+        type: Number,
+        required: true,
+        min: 1
+    },
+    relase_date: {
+        type: Date,
+        default: null
+    },
+    rating: {
+        type: Number,
+        required: true,
+        max: 5,
+        min: 1
+    },
+    price: {
+        type: Number,
+        required: true,
+        min: 1
+    }
+},
+{
+    strict: "throw"
 });
 
 const Book = mongoose.model("books", booksSchema);
