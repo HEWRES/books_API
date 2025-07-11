@@ -10,21 +10,13 @@ async function loadBooks() {
         const data = await res.json();
         
         data.forEach((book) => {
-            let bookDiv = document.createElement("div");
-            bookDiv.id = "booksDiv";
-            let bookTitle = document.createElement("h1");
-            let bookAuthor = document.createElement("h1");
-            let bookPrice = document.createElement("h1");
-
-            bookTitle.innerHTML = book.title;
-            bookAuthor.innerHTML = book.author;
-            bookPrice.innerHTML = book.price;
-
-            bookDiv.appendChild(bookTitle);
-            bookDiv.appendChild(bookAuthor);
-            bookDiv.appendChild(bookPrice);
-
-            booksDiv.appendChild(bookDiv);
+            booksDiv.innerHTML += `
+                <div id='booksDiv'>
+                    <h1>${book.title}</h1>
+                    <h1>${book.author}</h1>
+                    <h1>${book.price}</h1>
+                    <button onclick='deleteBook(${book._id})'>Delete</button>
+                </div>`;
         });
     }
     catch(error){
