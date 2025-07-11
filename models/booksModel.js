@@ -16,7 +16,7 @@ const booksSchema = new mongoose.Schema({
         required: true,
         min: 1
     },
-    relase_date: {
+    release_date: {
         type: Date,
         default: null
     },

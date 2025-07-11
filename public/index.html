@@ -9,6 +9,28 @@
 <body>
     <div id="books"></div>
 
+    <div id="bgForm">
+        <div id="divForm">
+            <form id="addBookForm">
+                <h1>Title:</h1>
+                <input type="text" name="title" placeholder="title" id="title">
+                <h1>Author:</h1>
+                <input type="text" name="author" placeholder="author" id="author">
+                <h1>Pages:</h1>
+                <input type="number" name="pages" placeholder="pages" id="pages">
+                <h1>Release date:</h1>
+                <input type="date" name="release_date" placeholder="release_date" id="release_date">
+                <h1>Rating:</h1>
+                <input type="number" name="rating" placeholder="rating" id="rating">
+                <h1>Price:</h1>
+                <input type="number" name="price" placeholder="price" id="price">
+                <br>
+                <input type="submit" value="Update book">
+                <button id="cancelBtn">Cancel</button>
+            </form>
+        </div>
+    </div>
+
     <a href="addNewBook.html"><button>Add new book</button></a>
     <script src="js/index.js"></script>
 </body>

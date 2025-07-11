@@ -9,7 +9,7 @@ form.addEventListener("submit", async (e) => {
         title: formData.get("title"),
         author: formData.get("author"),
         pages: formData.get("pages"),
-        relase_date: formData.get("relase_date"),
+        release_date: formData.get("release_date"),
         rating: formData.get("rating"),
         price: formData.get("price")
     };

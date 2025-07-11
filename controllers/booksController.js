@@ -22,7 +22,7 @@ const showBook = async (req, res, next) => {
             return next(err);
         }
 
-        let book = await Book.find({_id: id});
+        let book = await Book.findById(id);
         res.status(200).json(book);
     }
     catch(error){

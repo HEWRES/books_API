@@ -5,3 +5,21 @@
     border: solid 5px red;
     padding: 10px;
 }
+
+#bgForm{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+#divForm{
+    height: 650px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
