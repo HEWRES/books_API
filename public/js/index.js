@@ -15,12 +15,25 @@ async function loadBooks() {
                     <h1>${book.title}</h1>
                     <h1>${book.author}</h1>
                     <h1>${book.price}</h1>
-                    <button onclick='deleteBook(${book._id})'>Delete</button>
+                    <button onclick="deleteBook('${book._id}')">Delete</button>
                 </div>`;
         });
     }
     catch(error){
         console.log(error);
+    }
+}
+
+async function deleteBook(id){
+    try{
+        const res = await fetch(`/api/books/${id}`, {
+            method: "DELETE"
+        });
+        console.log(res);
+        window.location.reload();
+    }
+    catch(err){
+        console.log(err);
     }
 }
 
